@@ -1,0 +1,28 @@
+.LoginPage{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.LoginDiv{
+    border:1px solid #ccc;
+    border-radius: 20px;
+    padding:20px;
+}
+
+.inputdiv{
+    display: grid;
+    width: 400px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.inputdiv > *{
+    height: 30px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 10px;
+}
