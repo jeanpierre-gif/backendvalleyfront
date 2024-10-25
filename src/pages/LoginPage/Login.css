@@ -18,11 +18,18 @@ h1{
     display: flex;
     justify-content: center;
 }
-
+button{
+    cursor: pointer;
+}
 .inputdiv > *{
     height: 30px;
     border-radius:5px;
     border: 1px solid #ccc;
     padding: 5px;
     margin: 10px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
 }

@@ -16,7 +16,7 @@ const Login = () => {
 
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
-
+       //if email matches regex
        if(regex.test(email)){
         return true;
        }
@@ -58,11 +58,11 @@ const Login = () => {
                             type="email"
                             placeholder="Email"
                             name="email"
-                            value={initialValues.email} // Controlled input
+                            value={initialValues.email} 
                             onChange={(e) => 
                                 setInitialValues(prevValues => ({
                                     ...prevValues,
-                                    email: e.target.value // Update email directly
+                                    email: e.target.value 
                                 }))
                             }
                         />
@@ -70,17 +70,17 @@ const Login = () => {
                             type="password"
                             placeholder="Password"
                             name="password"
-                            value={initialValues.password} // Controlled input
+                            value={initialValues.password} 
                             onChange={(e) => 
                                 setInitialValues(prevValues => ({
                                     ...prevValues,
-                                    password: e.target.value // Update password directly
+                                    password: e.target.value 
                                 }))
                             }
                         />
-                        <button type="submit" disabled={isLoading}>Submit</button> {/* Disable while loading */}
+                        <button type="submit" disabled={isLoading}>Submit</button> 
                     </div>
-                    {error && <p className="error-message">{error}</p>} {/* Show error message if exists */}
+                    {error && <p className="error-message">{error}</p>} 
                 </form>
             </div>
         </div>

@@ -1,3 +1,7 @@
 export const LOGIN_START = 'LOGIN_START';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_ERROR = 'LOGIN_ERROR';
+
+export const GET_POSTS_REQUEST = 'GET_POSTS_REQUEST';
+export const GET_POSTS_SUCCESS = 'GET_POSTS_SUCCESS';
+export const GET_POSTS_ERROR = 'GET_POSTS_ERROR';

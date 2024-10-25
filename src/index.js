@@ -8,12 +8,13 @@ import { BrowserRouter } from 'react-router-dom';
 import { createStore, compose, combineReducers, applyMiddleware } from 'redux';
 import authReducer from './store/reducers/auth';
 import {thunk} from 'redux-thunk'; // Correct import
-
+import postReducer from './store/reducers/posts';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
   auth: authReducer,
+  post:postReducer
 });
 
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
